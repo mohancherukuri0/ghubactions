@@ -8,11 +8,16 @@ jobs:
            run: echo "Hello build"
     test:
      runs-on: ubuntu-latest
+     needs: build
      steps:
        - name: Hello Mohan
          run: echo "Hello test"
     deploy:
      runs-on: ubuntu-latest
+     needs: test
      steps:
        - name: Hello Mohan
-         run: echo "Hello deploy"
+         run: |
+           echo "Hello Deploy"
+           echo "Deploy inprogress"
+           echo "Deployment Done"
