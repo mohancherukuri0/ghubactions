@@ -5,4 +5,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Hello Mohan
-       run: echo ${{vars.MY_NAME}}
+       run: echo ${{secrets.CLOUD_PASSWORD}}
