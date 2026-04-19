@@ -1,23 +1,8 @@
-name: Hello
-on: workflow_dispatch
+name: triggerpush
+on: push
 jobs:
-    build:
-     runs-on: ubuntu-latest
-     steps:
-         - name: Hello Mohan
-           run: echo "Hello build"
-    test:
-     runs-on: ubuntu-latest
-     needs: build
-     steps:
-       - name: Hello Mohan
-         run: echo "Hello test"
-    deploy:
-     runs-on: ubuntu-latest
-     needs: test
-     steps:
-       - name: Hello Mohan
-         run: |
-           echo "Hello Deploy"
-           echo "Deploy inprogress"
-           echo "Deployment Done"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Mohan
+        run: echo "Hello build"
