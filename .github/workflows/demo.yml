@@ -1,14 +1,8 @@
 name: Hello
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: workflow_dispatch
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hello Mohan
-        run: echo "Hello build"
+   runs-on: ubuntu-latest
+   steps:
+     - name: Hello Mohan
+       run: echo ${{vars.MY_NAME}}
