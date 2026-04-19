@@ -11,4 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Mohan
-        run: echo "Hello build"
+        run: |
+          echo "Hello build"
+          echo "Build inprogress"
+          echo "Building done"
