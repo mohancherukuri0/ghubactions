@@ -5,4 +5,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Hello Mohan
-       run: echo "Hello GitHub Actions"
+       run: |
+         echo "Hello Github"
+         echo "Hello Mohan"
+         echo "Hello DevOps"
