@@ -1,4 +1,4 @@
-name: triggerpush
+name: Hello
 on: push
 jobs:
   build:
